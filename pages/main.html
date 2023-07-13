@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fo</title>
+	<link rel="shortcut icon" href="../fav/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../styles/style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<style>
+      #text {
+  font-size: 25px;
+  color: #fff;
+  margin-left: 250px;
+  margin-top: 100px;
+  margin-right: 250px;
+  max-width: 2000px;
+  overflow-wrap: break-word;
+  font-family: 'Alegreya', serif;
+}
+	</style>
+</head>
+<body>
+	<div>
+		<p id="text">
+		</p>
+	</div>
+	<script type="text/javascript" src="../codes/heart.js"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+	<script type="text/javascript">
+		const text = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, quod unde quis architecto iure velit ut maiores veniam et non ex deleniti eum natus repudiandae impedit a assumenda tenetur. Accusamus consequuntur velit dolorem error molestias tempora illo vero tempore aliquam dolore sequi rem eligendi culpa nisi explicabo perferendis voluptate delectus eos debitis corporis excepturi laboriosam, expedita minima necessitatibus. Illum repellat eligendi maxime, pariatur nisi ratione perspiciatis autem, veritatis, rerum placeat facilis aperiam amet provident illo minus. Obcaecati illo, nisi neque tenetur sapiente itaque cumque similique nostrum animi dolorum recusandae quas voluptatum ratione accusantium aut eum dolores minus, expedita ipsum sint iste eius. Accusamus incidunt ratione id vero nihil similique optio, laboriosam eius mollitia veniam possimus repudiandae placeat praesentium maiores tenetur nemo tempore laborum quasi perferendis beatae ducimus. Sapiente ratione quidem consectetur dolores itaque rem, saepe explicabo nulla dignissimos molestias aperiam obcaecati odit. Repellendus pariatur rem earum quidem nisi, et voluptatum enim quod, quasi ducimus ipsam dignissimos quibusdam dicta quas neque explicabo adipisci suscipit accusamus dolorum voluptates maiores veniam dolor ab eligendi. Esse, beatae tenetur est enim nulla voluptas nisi odit molestiae sapiente ea. Iure, cumque in quia asperiores voluptatibus cum harum excepturi aliquam. Id, culpa velit impedit ex reprehenderit libero?";
+        const speed = 75;
+        
+        let i = 0;
+        function typeWriter() {
+          if (i < text.length) {
+            document.getElementById("text").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+        typeWriter();
+	</script>
+</body>
+</html>
